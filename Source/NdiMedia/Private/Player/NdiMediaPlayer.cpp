@@ -218,21 +218,21 @@ FString FNdiMediaPlayer::GetStats() const
 	FString StatsString;
 	{
 		StatsString += TEXT("Total Frames\n");
-		StatsString += FString::Printf(TEXT("    Audio: %i\n"), PerfTotal.m_audio_frames);
-		StatsString += FString::Printf(TEXT("    Video: %i\n"), PerfTotal.m_video_frames);
-		StatsString += FString::Printf(TEXT("    Metadata: %i\n"), PerfTotal.m_metadata_frames);
+		StatsString += FString::Printf(TEXT("    Audio: %i\n"), PerfTotal.audio_frames);
+		StatsString += FString::Printf(TEXT("    Video: %i\n"), PerfTotal.video_frames);
+		StatsString += FString::Printf(TEXT("    Metadata: %i\n"), PerfTotal.metadata_frames);
 		StatsString += TEXT("\n");
 
 		StatsString += TEXT("Dropped Frames\n");
-		StatsString += FString::Printf(TEXT("    Audio: %i\n"), PerfDropped.m_audio_frames);
-		StatsString += FString::Printf(TEXT("    Video: %i\n"), PerfDropped.m_video_frames);
-		StatsString += FString::Printf(TEXT("    Metadata: %i\n"), PerfDropped.m_metadata_frames);
+		StatsString += FString::Printf(TEXT("    Audio: %i\n"), PerfDropped.audio_frames);
+		StatsString += FString::Printf(TEXT("    Video: %i\n"), PerfDropped.video_frames);
+		StatsString += FString::Printf(TEXT("    Metadata: %i\n"), PerfDropped.metadata_frames);
 		StatsString += TEXT("\n");
 
 		StatsString += TEXT("Queue Depth\n");
-		StatsString += FString::Printf(TEXT("    Audio: %i\n"), Queue.m_audio_frames);
-		StatsString += FString::Printf(TEXT("    Video: %i\n"), Queue.m_video_frames);
-		StatsString += FString::Printf(TEXT("    Metadata: %i\n"), Queue.m_metadata_frames);
+		StatsString += FString::Printf(TEXT("    Audio: %i\n"), Queue.audio_frames);
+		StatsString += FString::Printf(TEXT("    Video: %i\n"), Queue.video_frames);
+		StatsString += FString::Printf(TEXT("    Metadata: %i\n"), Queue.metadata_frames);
 		StatsString += TEXT("\n");
 	}
 
